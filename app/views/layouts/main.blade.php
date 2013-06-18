@@ -3,6 +3,11 @@
 <head>
     <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="/css/style.css" media="all" type="text/css" rel="stylesheet">
+    <link href="/css/pin.css" media="all" type="text/css" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 

@@ -1,0 +1,619 @@
+body{
+    margin:0px;
+    font-size:12px;
+    text-align:center;
+    word-spacing:2px;
+    background: #FFF url('/img/background.png');
+    padding: 0px 0px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+#body {
+    margin: 60px auto;
+    width: 1358px;
+}
+
+.search-area{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border: 1px solid #999;
+    height:20px;
+
+}
+.search-area *{
+    border:none;
+    height:20px;
+    vertical-align:top;
+}
+.search-area .search-box{
+    padding-left: 5px;
+}
+
+.loading{
+    display: none;
+}
+
+
+.login-area{
+    position: absolute;
+    right:5px;
+    font-size:13px;
+}
+.login-area a{
+    text-decoration: none;
+    color:#fff;
+}
+.login-area .nav{
+    display: inline-block;
+    height:34px;
+    line-height: 34px;
+    vertical-align: middle;
+    padding: 0px 16px;
+    color:#6FF;
+    font-weight:bold;
+}
+
+.login-area .nav:hover{
+    cursor: pointer;
+    color:#fff;
+}
+.login-area .nav img#avatar-thumb{
+    width:20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border:1px solid #CCC;
+}
+.login-area .menu{
+    padding-right: 12px;
+    position: relative;
+}
+.login-area .menu em{
+    display: inline-block;
+    background: transparent url(/images/bit01.png) no-repeat right center;
+    height:8px;
+    width:8px;
+    margin-left: 5px;
+}
+.login-area .menu ul{
+    background-color: #fff;
+    position: absolute;
+    right:0px;
+    text-align: left;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    border: 1px solid #CCCACA;
+    font-weight:normal;
+    display: none;
+}
+.login-area .menu ul li{
+    width:120px;
+}
+.login-area .menu ul li.separator{
+    height: 1px;
+    border-top:1px solid #dcdcdc;
+}
+.login-area .menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0px 16px;
+    color: #000;
+}
+.login-area .menu a:hover{
+    background-color: #dcdcdc;
+}
+.login-area .menu:hover{
+    /*background-color: #ffffff;*/
+}
+.login-area .menu:hover ul{
+    display: block;
+}
+.login-area .mbtn{
+    background-color:#F00;
+    letter-spacing:2px;
+}
+.login-area span.message-count{
+    background-color: #999;
+    display: inline-block;
+    padding: 3px 6px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border-radius:3px;
+    font-weight: bold;
+}
+.login-area span.message-count a{
+    display: none;
+}
+.login-area span.highlight-but{
+
+}
+
+
+
+.footer .navigator{
+    background-color: #FAFAFA;
+    padding: 10px 0px;
+}
+.footer .navigator ul{
+    width:1024px;
+    margin: 0px auto;
+    height: 30px;
+}
+
+.footer .navigator li a{
+    color:#333;
+}
+.footer .navigator li a:link{
+    text-decoration: none;
+}
+
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*
+login
+*/
+
+.login-wrap {
+    background-color: #FFF;
+    width: 800px;
+    margin: 160px auto;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.login-connection{
+    width:160px;
+}
+.login-connection a{
+    display: block;
+    margin: 5px 0px;
+}
+
+.login-wrap div form .form-row{
+    width: 400px;
+    height: 36px;
+}
+
+.login-connection {
+    width: 160px;
+}
+
+/*
+SNS
+*/
+
+.connection-btn{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #c5c5c5;
+    background: -moz-linear-gradient(19% 75% 90deg, #E5E5E5, #FAFAFA);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+    padding:8px 8px 8px 28px;
+    vertical-align:middle;
+    font-size: 16px;
+    color:#666;
+}
+
+.connection-btn:hover{
+    border:1px solid #52d6fc;
+    background: -moz-linear-gradient(19% 75% 90deg, #d4f1fa, #b9eaf9);
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9eaf9), to(#d4f1fa));
+}
+
+.connection-btn span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: transparent url(/img/connection_icon.png) no-repeat;
+    margin-right: 8px;
+}
+#weibo{
+    background-position: 0px -96px;
+}
+#tengxun{
+
+}
+#renren{
+    background-position: 0px -24px;
+}
+#qq{
+    background-position: 0px -48px;
+}
+#facebbok{
+    background-position: 0px -120px;
+}
+#twitter{
+    background-position: 0px -144px;
+}
+
+
+/*
+Pin lists
+*/
+
+.pin_list{
+    float:left;
+    margin: 0px 6px;
+}
+.pin_list a{
+    color:#3197CB;
+}
+.pin_list a:link{
+    text-decoration: none;
+}
+.pin_list a:hover{
+    text-decoration: underline;
+}
+.pin_list li.pin{
+    width:212px;
+    text-align: left;
+    border: 1px solid #F7F7F7;
+    margin-bottom: 16px;
+    position: relative;
+    background: #FFF url('/images/boxshadow.gif') 0px bottom no-repeat;
+    padding-bottom: 4px;
+}
+
+
+.pin_list li p{
+    margin: 0px;
+    padding: 10px;
+}
+
+.pin_list li p.other{
+    color:#AAA89F;
+}
+
+.pin_list li ul.comments{
+    background-color: #f7f7f7;
+}
+.pin_list li ul.comments li{
+    padding: 5px;
+    border-top:2px solid #FFF;
+}
+.pin_list li ul.comments li *{
+    vertical-align: top;
+}
+.pin_list li ul.comments li img{
+    width:25px;
+    height: 25px;
+}
+.pin_list li ul.comments li span{
+    display: inline-block;
+    width:160px;
+    color:#666;
+}
+.pin_list li ul.comments li span a{
+    color:#8c7ea6;
+    text-decoration: none;
+}
+.pin_list li ul.comments li span a:hover{
+    color:#904060;
+}
+.pin_list li ul.comments li.mycomment{
+    border-top:1px solid #FFF;
+}
+.pin_list li ul.comments li.mycomment img{
+    display: none;
+    margin-right: 5px;
+    float:left;
+}
+.pin_list li ul.comments li.mycomment input[type=text]{
+    float:left;
+    width:199px;
+}
+
+
+
+.pin_list li .tool{
+    display: none;
+}
+
+.pin_list li .tool a{
+    display: block;
+    background: transparent url(/images/btns.png) no-repeat;
+    width:32px;
+    height: 24px;
+    position: absolute;
+    top:12px;
+    z-index: 1000;
+}
+
+.pin_list li .tool a.repin{
+    left:12px;
+}
+.pin_list li .tool a.like{
+    left:90px;
+    background-position: 0px -44px;
+}
+.pin_list li .tool a.unlike{
+    left:90px;
+    background-position: 0px -92px;
+}
+.pin_list li .tool a.comment{
+    left:180px;
+    background-position: 0px -196px;
+}
+
+
+/*
+*   Quick menu
+*/
+
+.top-quickmenu{
+    background-color:#E6F3F9;
+    top: 45px;
+    left:0px;
+    right:0px;
+    position: fixed;
+    z-index: 50;
+    text-align: center;
+}
+
+.top-quickmenu ul.nav{
+    width:600px;
+    height: 28px;
+    margin: 0px auto;
+}
+.top-quickmenu ul.nav li{
+    float: left;
+    width:120px;
+    padding: 8px;
+}
+.top-quickmenu ul.nav li a:link{
+    text-decoration: none;
+}
+.top-quickmenu ul.nav li a{
+    color:#000;
+}
+.top-quickmenu ul.nav li.menu{
+    cursor: pointer;
+}
+.top-quickmenu ul.nav li.menu em {
+    display: inline-block;
+    background: transparent url(/images/bit01.png) no-repeat right center;
+    height: 8px;
+    width: 8px;
+    margin-left: 5px;
+}
+
+.top-quickmenu ul.nav li.menu ul{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width:480px;
+    text-align: left;
+}
+.top-quickmenu ul.nav li.menu:hover ul{
+    display: block;
+    margin-top: 8px;
+    border: 1px solid #999999;
+    -moz-box-shadow: 0px 0px 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 5px #000000;
+}
+.top-quickmenu ul.nav li.menu ul li:hover{
+    background-color: #F9F9F9;
+}
+
+
+
+.round-box{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border:10px solid rgba(0, 0, 0, .4);
+}
+
+.modal-window #title{
+    height: 36px;
+    font-size: 16px;
+    border-bottom: 1px solid #D5D2D2;
+    background-color: whiteSmoke;
+}
+.modal-window #title span {
+    display: inline-block;
+    height: 42px;
+    width: 320px;
+    padding: 10px;
+}
+.modal-window #title #close {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    right: 10px;
+    top: 12px;
+    position: absolute;
+    cursor: pointer;
+    background: transparent url('/images/close.png');
+}
+/*
+Add pin board...
+*/
+.pins-add-board{
+    display:none;
+    text-align: left;
+    width:520px;
+}
+.pins-add-board #content{
+    background-color: #fff;
+}
+
+.pins-add-board input[type=text]{
+    height: 24px;
+}
+
+.pins-add-board .wrap{
+    display: none;
+}
+#wrap_add_url,#wrap_add_upload{
+    padding: 10px;
+    display: none;
+}
+
+#txt_add_url{
+    width:360px;
+    height:24px;
+    margin: 0px;
+}
+
+.arrow-left,.arrow-right{
+    display:none;
+    position: absolute;
+    width:32px;
+    height: 32px;
+    top:100px;
+    cursor: pointer;
+    z-index: 20000;
+}
+#grabing-loading{
+    display: none;
+    position: absolute;
+    left:75px;
+    top:100px;
+}
+.arrow-left{
+    background: transparent url(/images/ArrowLeft.png);
+    left:0px;
+}
+.arrow-right{
+    background: transparent url(/images/ArrowRight.png);
+    right: 0px;
+}
+#pins-shows{
+    padding: 0px 10px 10px 10px;
+}
+#pins-shows-thumb{
+    overflow:hidden;
+    position: relative;
+    width: 180px;
+    height: 240px;
+    background-color: #CCC;
+    margin-right: 10px;
+}
+
+#pins-shows-thumb ul{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width:99999px;
+    cursor: pointer;
+}
+#pins-shows-thumb ul li{
+    float: left;
+}
+
+#pins-shows-thumb ul li .img-check
+{
+    background: transparent url(/images/check.png);
+    width:128px;
+    height:128px;
+    position: absolute;
+}
+/*#pins-shows-thumb ul li img{
+    width: 180px;
+    height: 240px;
+}*/
+#pins-infor-area{
+    width: 290px;
+    position: relative;
+}
+#pins-infor-area form{
+    margin: 0px;
+}
+
+#board-selector{
+    height: 120px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+#board-selector li{
+    padding: 5px 5px;
+}
+
+#addboard{
+
+    border: 1px solid #CCC;
+    padding: 4px 16px 4px 16px;
+    font-size: 14px;
+    color: #9B9999;
+}
+.addboard-loading{
+    position: absolute;
+    right: 8px;
+    top: 130px;
+}
+
+.pins-add-board .wrap div.add_btn{
+    text-decoration: none;
+    display: inline-block;
+    height: 150px;
+    width:250px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pins-add-board .wrap div.add_btn:hover{
+    background-color: #dcdcdc;
+}
+
+.pins-add-board .wrap div#create_board{
+    display: block;
+    width:100%;
+    border-top: 1px solid gray;
+    height: 120px;
+}
+
+/*
+Pin tool bar
+*/
+.pin_list li .tool{
+    display: none;
+}
+
+.pin_list li .tool a{
+    display: block;
+    background: transparent url(/img/btns.png) no-repeat;
+    width:32px;
+    height: 24px;
+    position: absolute;
+    top:12px;
+    z-index: 49;
+}
+
+.pin_list li .tool a.repin{
+    left:12px;
+}
+.pin_list li .tool a.like{
+    left:90px;
+    background-position: 0px -44px;
+}
+.pin_list li .tool a.unlike{
+    left:90px;
+    background-position: 0px -92px;
+}
+.pin_list li .tool a.comment{
+    left:180px;
+    background-position: 0px -196px;
+}

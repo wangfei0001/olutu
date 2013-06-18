@@ -57,7 +57,7 @@
                     <li><a href="/follower/wangfei001">粉丝</a></li>
                     <li><a href="/following/wangfei001">关注</a></li>
                     <li class="separator"></li>
-                    <li><a href="{{ URL::to_action('account::login@logout') }}">退出</a></li>
+                    <li><a href="">退出</a></li>
                 </ul>
 
             </li>
